@@ -1,4 +1,6 @@
 body{
+	display: flex;
+	justify-content: center;
 	background: teal;
 }
 
@@ -26,6 +28,3 @@ tr{
 	text-align: center;
 }
 
-table{
-
-}
