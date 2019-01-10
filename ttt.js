@@ -14,11 +14,11 @@ $(document).ready(function() {
 				turn.push(board.indexOf(board[i].html(addX)) + "X")
 			}
 			for(let i = 0; i < combos.length; i++){
-				if (turn.join("").includes(combos[i][0] + 'O') && turn.join("").includes(combos[i][1] + 'O') && turn.join("").includes(combos[i][2] + 'O') ){
+				if (turn.includes(combos[i][0] + 'O') && turn.includes(combos[i][1] + 'O') && turn.includes(combos[i][2] + 'O') ){
 					alert('O IS WINNER!')
 					setTimeout(function() {$("#ttt_table tbody tr td").html(""); }, 1500);
 					turn.length = 0
-				} else if(turn.join("").includes(combos[i][0] + 'X') && turn.join("").includes(combos[i][1] + 'X') && turn.join("").includes(combos[i][2] + 'X') ){
+				} else if(turn.includes(combos[i][0] + 'X') && turn.includes(combos[i][1] + 'X') && turn.includes(combos[i][2] + 'X') ){
 					alert('X IS WINNER!')
 					setTimeout(function() {$("#ttt_table tbody tr td").html(""); }, 1500);
 					turn.length = 0
