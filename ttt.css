@@ -1,0 +1,31 @@
+body{
+	background: teal;
+}
+
+td {
+	border: 3px solid silver;
+	height: 300px;
+	width: 300px;
+}
+
+h1{
+	color: silver;
+	font-size: 6vw;
+}
+
+
+#container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+tr{
+	display: flex;
+	text-align: center;
+}
+
+table{
+
+}
